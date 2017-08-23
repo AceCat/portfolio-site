@@ -178,3 +178,19 @@ var smartphonePath = {
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
   });
 });
+
+var topImage = $("#top-image")
+var sketch = true;
+
+ topImage.on('click', function(){
+ 	var sketchImage = $(topImage)
+ 	sketchImage.hide();
+ 	if (sketch === true) {
+ 		sketch = false;
+ 		sketchImage.attr('src', './images/GA_photo.JPG')
+ 	} else if (sketch === false) {
+ 		sketch = true;
+ 		sketchImage.attr('src', './images/benn-sketch.png')
+ 	}
+ 	sketchImage.fadeIn();
+ })

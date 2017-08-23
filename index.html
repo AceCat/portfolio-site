@@ -46,7 +46,7 @@
 
 		<div class='row top-row'>
 		<div id='introduction-overlay'>
-			<div id='introduction' class='col-md-5'>
+			<div id='introduction' class='col-md-5 introduction-overlay'>
 				<h1>Hey I'm Benn</h1>
 				<div class='animated slideInLeft'>
 					<p>Web developer with a background in digital marketing analysis and content creation.</p>
@@ -65,20 +65,23 @@
 					</div>
 					<div class='lazySVG' id='smartphone'>
 					</div>
-					<img class='top-image' src='./images/benn-sketch.png'/>
+					<img id='top-image' src='./images/benn-sketch.png'/>
 			</div>
 
 		</div>
 
 
-
+	<div class='row'>
+	<h2 class='secion-header'>My Projects</h2>
+	</div>
+	<hr size="6">
 
 	<div class='row project-left'>
-		<div class='col-sm-4 projectImage d-flex flex-column'>
+		<div class='col-sm-6 projectImage d-flex flex-column'>
 			<img src='./images/over-which.png'/>
 		</div>
 
-		<div class='col-sm-7 projectDescription'>
+		<div class='col-sm-5 projectDescription'>
 			<h2>Over Which</h2>
 			<p>Overwhich is a web application created to help players create the most effective team in Blizzard's popular game Overwatch. Players can easily visualize how different characters compliment each other while contributing to the database and community to make recommendations more accurate. Built with an Angular front-end on an express server framework. Check it out.</p>
 			<button class='projectButton'>Check out OverWhich</button>

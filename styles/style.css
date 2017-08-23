@@ -13,6 +13,11 @@ body {
 	width: 50%;
 }
 
+.introduction-overlay{
+	background-color: rgba(192,178,131,.1);
+	padding-top: -10px;
+}
+
 .lazySVG{
 	width: 150px;
 }
@@ -37,7 +42,7 @@ body {
 	float: left;
 }
 
-.top-image {
+#top-image {
 	background-color: #C0B283;
 	border-radius: 100%;
 	width:50%;
@@ -50,11 +55,12 @@ body {
 
 .project-left {
 	background-color: #F4F4F4;
-	border-style: solid;
+	border-style: none;
 	border-color: grey;
 	border-width: 3px;
 	border-radius: 5px;
 	display: block;
+	height: 50vh;
 }
 
 .project-right {
@@ -64,6 +70,8 @@ body {
 	border-width: 3px;
 	border-radius: 5px;
 	display: block;
+	height: 50vh;
+
 }
 
 .projectImage {
@@ -103,4 +111,8 @@ img {
   background-color: #fff !important;
   transition: background-color 200ms linear;
   border-bottom: solid grey 2px;
+}
+
+.section-header{
+	text-decoration: underline;
 }

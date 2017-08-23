@@ -1,0 +1,106 @@
+body {
+	padding-top: 25px;
+	background-color: #F4F4F4;
+}
+
+.top-row{
+	height: 100vh;
+}
+
+#introduction{
+	margin-top: 30vh;
+	color: #C0B283;
+	width: 50%;
+}
+
+.lazySVG{
+	width: 150px;
+}
+
+#lightbulb {
+	padding-top: 50px;
+	margin: 0 auto;
+}
+
+#gear {
+	padding-top: 20px;
+	margin-left: 75%;
+	position: absolute;
+}
+
+#smartphone{
+	padding-top: 20px;
+	position: absolute;
+}
+
+.left-float {
+	float: left;
+}
+
+.top-image {
+	background-color: #C0B283;
+	border-radius: 100%;
+	width:50%;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+}
+
+
+
+.project-left {
+	background-color: #F4F4F4;
+	border-style: solid;
+	border-color: grey;
+	border-width: 3px;
+	border-radius: 5px;
+	display: block;
+}
+
+.project-right {
+	background-color: #F4F4F4;
+	border-style: none;
+	border-color: grey;
+	border-width: 3px;
+	border-radius: 5px;
+	display: block;
+}
+
+.projectImage {
+	margin: 5px;
+}
+
+.projectDescription{
+
+}
+
+.projectButton {
+	margin: 3px auto;
+	display: block;
+	border-radius: 3px;
+	background-color: #F7B733;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	border-style: none;
+}
+
+img {
+	width: 100%;
+}
+
+.navbar-fixed-top{
+	background-color: #F4F4F4;
+	border: none;
+	color: white;
+}
+
+.navbar li a{
+	color: white;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+  border-bottom: solid grey 2px;
+}

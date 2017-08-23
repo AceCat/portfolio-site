@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./styles/style.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+ 	 <script src='./js/jquery.lazylinepainter-1.7.0.min.js'></script>
+
+ 	 <script type="text/javascript" src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+ 	 <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+ 	 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+</head>
+<body>
+
+	<nav class="navbar navbar-fixed-top navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Benn Myers</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="/team-analyzer" routerLinkActive="active">About</a></li>
+	        <li><a routerLink='/characters-browser' routerLinkActive="active">Work</a></li>
+	        <li><a routerLink="/about" routerLinkActive="active">Contact</a></li>
+	      </ul>
+
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+	<div class='container'>
+
+		<div class='row top-row'>
+		<div id='introduction-overlay'>
+			<div id='introduction' class='col-md-5'>
+				<h1>Hey I'm Benn</h1>
+				<div class='animated slideInLeft'>
+					<p>Web developer with a background in digital marketing analysis and content creation.</p>
+					<p>Check out my work below</p>
+					<p>Learn more about me here</p>
+					<p>Hear what I'm banging my head against on my blog</p>
+				</div>
+			</div>
+		</div>
+
+
+			<div class='col-md-6'>
+					<div class='lazySVG' id='lightbulb'>
+					</div>
+					<div class='lazySVG' id='gear'>
+					</div>
+					<div class='lazySVG' id='smartphone'>
+					</div>
+					<img class='top-image' src='./images/benn-sketch.png'/>
+			</div>
+
+		</div>
+
+
+
+
+	<div class='row project-left'>
+		<div class='col-sm-4 projectImage d-flex flex-column'>
+			<img src='./images/over-which.png'/>
+		</div>
+
+		<div class='col-sm-7 projectDescription'>
+			<h2>Over Which</h2>
+			<p>Overwhich is a web application created to help players create the most effective team in Blizzard's popular game Overwatch. Players can easily visualize how different characters compliment each other while contributing to the database and community to make recommendations more accurate. Built with an Angular front-end on an express server framework. Check it out.</p>
+			<button class='projectButton'>Check out OverWhich</button>
+		</div>
+	</div>
+
+	<div class='row project-right'>
+
+		<div class='col-sm-7 projectDescription'>
+			<h2>Rent-All</h2>
+			<p>Spawned out of a barside conversation about how quickly property values were changing throughout Chicago, Rent-All is an app that makes it easy to explore how the housing market has changed in a given zip code. Select any US state and browse zip codes or enter what you're interested in directly to see how statistics like average price per square foot and average home price have fluctuated.
+
+			The app uses Zillow's API and D3 for visualization.</p>
+			<button class='projectButton'>Check out Rent-All</button>
+		</div>
+
+		<div class='col-sm-4 projectImage d-flex flex-column'>
+			<img src='./images/rent-all.png'/>
+		</div>
+	</div>
+
+	<div class='row project-left'>
+		<div class='col-sm-4 projectImage'>
+			<img src='./images/school-donor.png'/>
+		</div>
+
+		<div class='col-sm-7 projectDescription'>
+			<h2>School Patron</h2>
+			<p>Ever wanted to help your local schools but been unsure where to start? School Patron is an app designed to help schools communicate what they need and donors to display what they have to offer. Built on an express backend with a Handlebars templating engine, School Patron is designed to make it easy to be a good samaritan.</p>
+			<button class='projectButton'>Check out School Patron</button>
+		</div>
+	</div>
+
+	<div class='row project-right'>
+
+		<div class='col-sm-7 projectDescription'>
+			<h2>Door Quest</h2>
+			<p>A mash-up of a classic Choose-Your-Own-Adventure game with turn-based RPG elements, Door Quest is a spooky Lovecraftian adventure (and my very first web development project.) Tread carefully as you check it out, surviving the Old One's cultists isn't supposed to be easy!</p>
+			<button class='projectButton'>Get ~spooked~</button>
+		</div>
+
+		<div class='col-sm-4 projectImage d-flex flex-column'>
+			<img src='./images/lovecraft.png'/>
+		</div>
+	</div>
+
+</div>
+
+	<script type="text/javascript" src='./js/main.js'></script>
+</body>
+</html>

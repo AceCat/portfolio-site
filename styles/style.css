@@ -16,6 +16,17 @@ body {
 .introduction-overlay{
 	background-color: rgba(192,178,131,.1);
 	padding-top: -10px;
+	height: 65%;
+}
+
+
+.shadow {
+   -moz-box-shadow: 8px 8px 2px 0px rgba(0,0,0,.75);
+   -webkit-box-shadow: 11px 10px 5px 0px rgba(0,0,0,.75);
+   box-shadow: 11px 10px 5px 0px rgba(0,0,0,.75);;
+}
+
+.image-overlay{
 }
 
 .lazySVG{

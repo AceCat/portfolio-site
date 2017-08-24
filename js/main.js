@@ -96,7 +96,7 @@ var pathObj = {
  {
     "svgData": pathObj,
     "strokeWidth": 2,
-    "strokeColor": "#e09b99"
+    "strokeColor": "#c0B283"
 }).lazylinepainter('paint'); 
 });
  
@@ -127,7 +127,7 @@ var gearPath = {
  {
     "svgData": gearPath,
     "strokeWidth": 2,
-    "strokeColor": "#e09b99"
+    "strokeColor": "#1bb2ba"
 }).lazylinepainter('paint'); 
 });
 
@@ -166,7 +166,7 @@ var smartphonePath = {
  {
     "svgData": smartphonePath,
     "strokeWidth": 2,
-    "strokeColor": "#e09b99"
+    "strokeColor": "#db3b3b"
 }).lazylinepainter('paint'); 
 });
 
@@ -194,3 +194,10 @@ var sketch = true;
  	}
  	sketchImage.fadeIn();
  })
+
+ $('#lightbulb').click(function() {
+ 	var lightbulb = $('#lightbulb');
+ 	lightbulb.addClass('bounce').one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function(){
+ 		lightbulb.removeClass('bounce')
+ 	})
+ });

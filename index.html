@@ -12,6 +12,8 @@
 
  	 <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 
+ 	 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
  	 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 </head>
@@ -33,9 +35,9 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
-	        <li><a href="/team-analyzer" routerLinkActive="active">About</a></li>
-	        <li><a routerLink='/characters-browser' routerLinkActive="active">Work</a></li>
-	        <li><a routerLink="/about" routerLinkActive="active">Contact</a></li>
+	        <li class='nav-item'><a href="/team-analyzer" routerLinkActive="active">About</a></li>
+	        <li class='nav-item'><a routerLink='/characters-browser' routerLinkActive="active">Work</a></li>
+	        <li class='nav-item'><a routerLink="/about" routerLinkActive="active">Contact</a></li>
 	      </ul>
 
 	    </div><!-- /.navbar-collapse -->
@@ -44,22 +46,21 @@
 
 	<div class='container'>
 
+	<div class='introduction-overlay shadow'>
 		<div class='row top-row'>
 		<div id='introduction-overlay' class='shadow animated slideInLeft'>
-			<div id='introduction' class='col-md-5 introduction-overlay shadow'>
-				<h1>Hey I'm Benn</h1>
+			<div id='introduction' class='col-md-5'>
+				<h1 class='greeting'>Hey I'm Benn</h1>
 				<div>
-					<p>Web developer with a background in digital marketing analysis and content creation.</p>
-					<p>Check out my work below</p>
-					<p>Learn more about me here</p>
-					<p>Hear what I'm banging my head against on my blog</p>
+					<p class='intro-blurb'>Web developer with a background in digital marketing analysis and content creation.</p>
+					<p class='intro-blurb'>Check out my work below</p>
+					<p class='intro-blurb'>Learn more about me here</p>
+					<p class='intro-blurb'>Hear what I'm banging my head against on my blog</p>
 				</div>
 			</div>
 		</div>
-
-
 			<div class='col-md-6 image-overlay'>
-					<div class='lazySVG' id='lightbulb'>
+					<div class='lazySVG animated' id='lightbulb'>
 					</div>
 					<div class='lazySVG' id='gear'>
 					</div>
@@ -67,14 +68,21 @@
 					</div>
 					<img id='top-image' src='./images/benn-sketch.png'/>
 			</div>
-
 		</div>
+
+		<div class='row'>
+			<a href='#overwhich'><img class='nav-arrow' src='./images/down-arrow.png'/></a>
+		</div>
+	</div>
 
 
 	<div class='row'>
-	<h2 class='secion-header'>My Projects</h2>
+	<h2 color='white'>My Projects</h2>
+	<a name='overwhich'></a>
+
 	</div>
 	<hr size="6">
+
 
 	<div class='row project-left'>
 		<div class='col-sm-6 projectImage d-flex flex-column'>

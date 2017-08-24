@@ -19,37 +19,37 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-fixed-top navbar-default">
-	  <div class="container-fluid">
-	    <!-- Brand and toggle get grouped for better mobile display -->
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <a class="navbar-brand" href="#">Benn Myers</a>
-	    </div>
+<nav class="navbar navbar-fixed-top navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">Benn Myers</a>
+    </div>
 
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav">
-	        <li class='nav-item'><a href="/team-analyzer" routerLinkActive="active">About</a></li>
-	        <li class='nav-item'><a routerLink='/characters-browser' routerLinkActive="active">Work</a></li>
-	        <li class='nav-item'><a routerLink="/about" routerLinkActive="active">Contact</a></li>
-	      </ul>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class='nav-item'><a href="./about.html" routerLinkActive="active">About</a></li>
+        <li class='nav-item'><a href='#overwhich'>Work</a></li>
+        <li class='nav-item'><a href='#footer'>Contact</a></li>
+      </ul>
 
-	    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-	</nav>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
-	<div class='container'>
+<div class='container'>
 
 	<div class='introduction-overlay shadow'>
 		<div class='row top-row'>
 		<div id='introduction-overlay' class='shadow animated slideInLeft'>
-			<div id='introduction' class='col-md-5'>
+			<div id='introduction' class='col-lg-5 col-md-5 col-sm-12 col-xs-12'>
 				<h1 class='greeting'>Hey I'm Benn</h1>
 				<div>
 					<p class='intro-blurb'>Web developer with a background in digital marketing analysis and content creation.</p>
@@ -59,30 +59,32 @@
 				</div>
 			</div>
 		</div>
-			<div class='col-md-6 image-overlay'>
+			<div class='col-lg-6 col-md-6 col-sm-12 col-xs-12 image-overlay'>
 					<div class='lazySVG animated' id='lightbulb'>
 					</div>
 					<div class='lazySVG' id='gear'>
 					</div>
 					<div class='lazySVG' id='smartphone'>
 					</div>
-					<img id='top-image' src='./images/benn-sketch.png'/>
+					<img id='top-image' class='img-responsive' src='./images/benn-sketch.png'/>
 			</div>
 		</div>
 
 		<div class='row'>
+			<div class='col-md-12 col-sm-12 col-xs-12'>
 			<a href='#overwhich'><img class='nav-arrow' src='./images/down-arrow.png'/></a>
+			<a class='anchor-destination' name='overwhich'></a>
+			</div>
 		</div>
 	</div>
 
 
 	<div class='row'>
-	<h2 color='white'>My Projects</h2>
-	<a name='overwhich'></a>
-
+		<div class='col-lg-12 offset-2 text-center'>
+			<h2 class='section-header'>My Projects</h2>
+			<hr class='primary'>
+		</div>
 	</div>
-	<hr size="6">
-
 
 	<div class='row project-left'>
 		<div class='col-sm-6 projectImage d-flex flex-column'>
@@ -90,44 +92,78 @@
 		</div>
 
 		<div class='col-sm-5 projectDescription'>
-			<h2>Over Which</h2>
-			<p>Overwhich is a web application created to help players create the most effective team in Blizzard's popular game Overwatch. Players can easily visualize how different characters compliment each other while contributing to the database and community to make recommendations more accurate. Built with an Angular front-end on an express server framework. Check it out.</p>
-			<button class='projectButton'>Check out OverWhich</button>
+			<h2>Overwhich</h2>
+			<p><strong>What is it?</strong> Overwhich is a web application created to help players create the most effective team in Blizzard's popular game Overwatch.</p>
+			<p><strong>Why is it cool?</strong> Overwhich uses a unique database that responds to community feedback to help user's make intelligent decisions in a complex game. The application is flexible enough to make intelligent recommendations even as the 'meta' of the game changes and different playstyles become popular.</p>
+			<p><strong>What's it built with?</strong> Overwhich is an Angular 4 front-end paired with an express server and a MongoDB database. Users can either use the front-end application or use the database as an Overwatch character API.</p>
+			<a href='https://overwhich.herokuapp.com/team-analyzer'><button class='projectButton'>Check out OverWhich</button></a>
 		</div>
 	</div>
+
+
+	<div class='row'>
+		<br />
+		<a name='rent-all'></a>
+	</div>
+
+
 
 	<div class='row project-right'>
 
-		<div class='col-sm-7 projectDescription'>
+		<div class='col-sm-5 projectDescription'>
 			<h2>Rent-All</h2>
-			<p>Spawned out of a barside conversation about how quickly property values were changing throughout Chicago, Rent-All is an app that makes it easy to explore how the housing market has changed in a given zip code. Select any US state and browse zip codes or enter what you're interested in directly to see how statistics like average price per square foot and average home price have fluctuated.
+			<p><strong>What is it?</strong> Spawned out of a barside conversation about how quickly property values were changing throughout Chicago, Rent-All is an app that makes it easy to explore how the housing market has changed in a given zip code. Select any US state and browse zip codes or enter what you're interested in directly to see how statistics like average price per square foot and average home price have fluctuated.</p>
+			<p><strong>Why is it cool?</strong> The application uses D3 to draw detailed maps of any US state to show you exactly where the zip codes lie in a given state. If nothing else, you can marvel at how many zip codes the US has.</p>
+			<p><strong>What's it built with?</strong> Rent-All is built on an Angular 4 front-end and a Sinatra server that uses a SQL database. Property data is provided by the Zillow API.</p>
 
-			The app uses Zillow's API and D3 for visualization.</p>
 			<button class='projectButton'>Check out Rent-All</button>
 		</div>
 
-		<div class='col-sm-4 projectImage d-flex flex-column'>
-			<img src='./images/rent-all.png'/>
+		<div class='col-sm-6 projectImage float-right d-flex flex-column'>
+			<img  src='./images/rent-all.png'/>
 		</div>
 	</div>
 
+	<div class='clear-floats'>
+	</div>
+
+	<div class='row'>
+		<br />
+		<a name='rent-all'></a>
+	</div>
+
 	<div class='row project-left'>
-		<div class='col-sm-4 projectImage'>
-			<img src='./images/school-donor.png'/>
+		<div class='col-sm-6 projectImage'>
+			<img src='./images/school-app.png'/>
 		</div>
 
-		<div class='col-sm-7 projectDescription'>
+		<div class='col-sm-5 projectDescription'>
 			<h2>School Patron</h2>
-			<p>Ever wanted to help your local schools but been unsure where to start? School Patron is an app designed to help schools communicate what they need and donors to display what they have to offer. Built on an express backend with a Handlebars templating engine, School Patron is designed to make it easy to be a good samaritan.</p>
+			<p><strong>What is it?</strong> School Patron is an app designed to make it easier for local schools to get the supplies they need! At it's core School Patron is a social network that allows schools to easily post what they need and for potential donors to post what they have to give. In short, School Patron aims to make it easier to be a good samaritan.</p>
+
+			<p><strong>Why is it cool?</strong> School Patron utilizes a non-relational database that allows schools to easily list items they need, remove them when they're resolved, and give credit to the donor that helped them. The app utilizes many features that are often taken for granted - such as a search engine, user authentication, and the ability to send private messages.</p>
+
+			<p><strong>What's it built with?</strong> School Patron is built with an express server and the handlebars templating engine.</p>
+
 			<button class='projectButton'>Check out School Patron</button>
 		</div>
+	</div>
+
+	<div class='row'>
+		<br />
+		<a name='rent-all'></a>
 	</div>
 
 	<div class='row project-right'>
 
 		<div class='col-sm-7 projectDescription'>
 			<h2>Door Quest</h2>
-			<p>A mash-up of a classic Choose-Your-Own-Adventure game with turn-based RPG elements, Door Quest is a spooky Lovecraftian adventure (and my very first web development project.) Tread carefully as you check it out, surviving the Old One's cultists isn't supposed to be easy!</p>
+			<p><strong>What is it?</strong> A combination of a classic choose-your-own-adventure game and a turn-based RPG, Door Quest is a Lovecraftian adventure (and my very first coding project).</p>
+
+			<p><strong>Why is it cool?</strong> Door quest features a branching story with meaningful choices that will determine whether you make it to the end. Sneak, fight, or flee your way to saving the world or an untimely demise!</p>
+
+			<p><strong>What's it built with?</strong> Raw HTML, CSS, and jQuery. Return to the days of low-graphic-fidelity and give it a shot. Fair warning, beating the Old Ones isn't supposed to be easy!</p>
+		
 			<button class='projectButton'>Get ~spooked~</button>
 		</div>
 
@@ -136,7 +172,31 @@
 		</div>
 	</div>
 
+		<div class='row'>
+			<br />
+			<a name='rent-all'></a>
+		</div>
 </div>
+
+<div id='footer'>
+	<div class='container'>
+		<div class='col-lg8 text-center'>
+			<h2>Contact Me</h2>
+			<hr class='primary'>
+				<p>Need help on a web development project or have questions? Get in touch!</p>
+		</div>
+		<div class='col-lg-4 text-center'>
+			<p>Chicago, IL</p>
+		</div>
+		<div class='col-lg-4 text-center'>
+			<p><a>myers.benn@gmail.com</a></p>
+		</div>
+		<div class='col-lg-4 text-center'>
+			<p><a>303-919-6647</a></p>
+		</div>
+		<div>
+</div>
+
 
 	<script type="text/javascript" src='./js/main.js'></script>
 </body>

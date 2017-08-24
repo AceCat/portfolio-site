@@ -202,7 +202,6 @@ var sketch = true;
  	})
  });
 
-//Makes anchor links scroll
 $('a[href*="#"]').click(function(event){
 	var target = $(this.hash);
 	target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -212,4 +211,12 @@ $('a[href*="#"]').click(function(event){
 			scrollTop: target.offset().top
 		},1000)
 	}
+});
+
+$('.interest ul').hide();
+
+$('.interest-content').click(function(){
+	$(this).next("ul").slideToggle();
+	$(this).toggleClass('rotated');
+	return false;
 })

@@ -34,7 +34,7 @@ a.anchor-destination{
 }
 
 #introduction{
-	height: 25vh;
+	height: 45vh;
 	margin-top: 10vh;
 	color: #373737;
 	margin-left: 10px;
@@ -102,6 +102,17 @@ a.anchor-destination{
 	margin-left: 10%;
 }
 
+@media (max-width: 750px){
+	#smartphone{
+		display: none;
+	}
+	#lightbulb{
+		display: none;
+	}
+	#gear{
+		display: none;
+	}
+}
 
 #top-image {
 	background-color: #C0B283;
@@ -212,6 +223,7 @@ time {
   background: #F45B69;
   color: white;
 }
+
  
 .timeline ul li div::before {
   content: '';
@@ -220,6 +232,10 @@ time {
   width: 0;
   height: 0;
   border-style: solid;
+}
+
+.timeline img{
+	max-height:600px;
 }
 
 .timeline ul li:nth-child(odd) div {

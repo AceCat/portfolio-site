@@ -180,7 +180,7 @@ var smartphonePath = {
 });
 
 var topImage = $("#top-image")
-var sketch = true;
+var sketch = false;
 
  topImage.on('click', function(){
  	var sketchImage = $(topImage)

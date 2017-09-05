@@ -220,3 +220,10 @@ $('.interest-content').click(function(){
 	$(this).toggleClass('rotated');
 	return false;
 })
+
+$(function() {
+		$('.modalImage').on('click', function() {
+			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+			$('#imagemodal').modal('show');   
+		});		
+});
